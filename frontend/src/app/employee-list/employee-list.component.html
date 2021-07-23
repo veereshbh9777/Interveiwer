@@ -1,0 +1,25 @@
+<h2> Interviewer List</h2>
+<table class = "table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th> Candidate Name</th>
+            <th> Candidate Age </th>
+            <th> Stream</th>
+            <th> Gender</th>
+            <th> College</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> {{ employee.candidateName }} </td>
+            <td> {{ employee.candidateAge }} </td>
+            <td> {{ employee.stream }} </td>
+            <td> {{ employee.college }} </td>
+                       <td>
+                <button (click) = "updateEmployee(employee.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

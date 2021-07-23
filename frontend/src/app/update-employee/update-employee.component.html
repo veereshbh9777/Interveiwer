@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Interviewer </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Candidate Name</label>
+            <input type="text" class ="form-control" id = "candidateName"
+                [(ngModel)] = "employee.candidateName" name = "candidateName">
+        </div>
+    
+        <div class="form-group">
+            <label> Candidate Age</label>
+            <input type="text" class ="form-control" id = "candidateAge" 
+                [(ngModel)] = "employee.candidateAge" name = "candidateAge">
+        </div>
+    
+        <div class="form-group">
+            <label> Stream</label>
+            <input type="text" class ="form-control" id = "stream"
+                [(ngModel)] = "employee.stream" name = "stream">
+        </div>
+
+        <div class="form-group">
+            <label> College</label>
+            <input type="text" class ="form-control" id = "college"
+                [(ngModel)] = "employee.college" name = "college">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
